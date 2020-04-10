@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FFA200"
+    tools:context=".Prac4">
+
+
+    <EditText
+        android:id="@+id/temprature"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:layout_marginHorizontal="30dp"
+        android:textSize="20sp"
+        android:hint="Temperature"
+        android:inputType="numberDecimal" />
+
+    <ToggleButton
+        android:id="@+id/cf"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="140dp"
+        android:checked="true"
+        android:onClick="changeTemp"
+        android:textOff="Fahrenheit"
+        android:textOn="Celcius" />
+
+    <Button
+        android:id="@+id/convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temprature"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:onClick="convert"
+        android:text="Convert" />
+
+    <TextView
+        android:id="@+id/tempPrint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/convert"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="40sp" />
+</RelativeLayout>
