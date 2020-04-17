@@ -6,10 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".Prac13">
 
+    <VideoView
+        android:id="@+id/video1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp" />
+
+
     <Button
-        android:id="@+id/pip"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnPIP"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Enter Pip mode"
-        android:layout_centerInParent="true"/>
+        android:layout_centerHorizontal="true"
+        android:text="Enter PIP"
+        android:layout_alignParentBottom="true"
+        android:textColor="#fff" />
 </RelativeLayout>
